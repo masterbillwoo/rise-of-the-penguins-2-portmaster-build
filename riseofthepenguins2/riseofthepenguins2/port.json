@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "name": "riseofthepenguins2.zip",
+  "items": [
+    "Rise of the Penguins 2.sh",
+    "riseofthepenguins2"
+  ],
+  "items_opt": null,
+  "attr": {
+    "title": "Rise of the Penguins 2",
+    "desc": "Penguin's Dark Ascent: Rise of the Penguins 2 - A dark and challenging 2D platformer adventure where you guide penguins through treacherous environments, battle fierce enemies and bosses, and uncover a mysterious story. Features multiple levels, boss battles, inventories, and rich storytelling.",
+    "inst": "Ready to run. No additional files needed. Game includes full controller support.",
+    "genres": [
+      "platformer",
+      "action",
+      "adventure"
+    ],
+    "porter": [
+      "Pwoo"
+    ],
+    "image": {
+      "screenshot": "screenshot.png",
+      "cover": "cover.png"
+    },
+    "rtr": true,
+    "runtime": "godot_4.5",
+    "reqs": [],
+    "arch": []
+  }
+}

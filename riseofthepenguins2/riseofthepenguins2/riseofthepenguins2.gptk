@@ -1,0 +1,37 @@
+# GPTokeyB Configuration for Rise of the Penguins 2
+# Maps physical controller to keyboard since Godot's SDL isn't seeing the controller properly
+
+# Navigation (for ui_ actions)
+back = tab
+start = enter
+
+# Face buttons matching your Input Map physical keys
+a = l        # dive
+b = space       # jump
+x = shift        # Dash (Button 3 in Input Map)
+y = j        # shoot
+
+# Triggers
+l1 = q       # item1
+l2 = c       # extra
+r1 = e       # item2
+r2 = h     # cycle items
+
+# D-pad for movement (matching move_left/right/crouch/looking_up)
+dpad_up = w
+dpad_down = s  
+dpad_left = a
+dpad_right = d
+
+# Analog stick also for movement
+left_analog_up = w
+left_analog_down = s
+left_analog_left = a
+left_analog_right = d
+
+# Deadzone configuration
+deadzone_mode = axial
+deadzone_scale = 1.0
+deadzone_y = 0.2
+deadzone_x = 0.2
+deadzone_triggers = 0.2
