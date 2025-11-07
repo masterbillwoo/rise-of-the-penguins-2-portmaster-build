@@ -63,16 +63,15 @@ fi
 $ESUDO mount "$controlfolder/libs/${godot_runtime}.squashfs" "${godot_dir}"
 
 # Detect folder structure - support both nested and flat structures
-if [ -d "$GAMEDIR/riseofthepenguins2/gamedata" ]; then
+# Check for nested structure first (more specific)
+if [ -f "$GAMEDIR/riseofthepenguins2/$gptk_filename" ] && [ -d "$GAMEDIR/riseofthepenguins2/gamedata" ]; then
     # Nested structure: riseofthepenguins2/riseofthepenguins2/gamedata
-    DATADIR="$GAMEDIR/riseofthepenguins2"
     GPTK_PATH="$GAMEDIR/riseofthepenguins2/$gptk_filename"
     PCK_PATH="$GAMEDIR/riseofthepenguins2/gamedata/$pck_filename"
     LIB_PATH="$GAMEDIR/riseofthepenguins2/gamedata/addons/limboai/bin:$GAMEDIR/riseofthepenguins2/lib"
     cd "$GAMEDIR/riseofthepenguins2/gamedata"
 else
     # Flat structure: riseofthepenguins2/gamedata
-    DATADIR="$GAMEDIR"
     GPTK_PATH="$GAMEDIR/$gptk_filename"
     PCK_PATH="$GAMEDIR/gamedata/$pck_filename"
     LIB_PATH="$GAMEDIR/gamedata/addons/limboai/bin:$GAMEDIR/lib"
