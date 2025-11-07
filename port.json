@@ -1,0 +1,47 @@
+{
+  "version": 4,
+  "name": "riseofthepenguins2",
+  "items": [
+    "Rise of the Penguins 2.sh",
+    "riseofthepenguins2"
+  ],
+  "items_opt": [],
+  "attr": {
+    "title": "Rise of the Penguins 2",
+    "porter": [
+      "Pwoo"
+    ],
+    "desc": "Penguin's Dark Ascent: Rise of the Penguins 2 - A dark and challenging 2D platformer adventure where you guide penguins through treacherous environments, battle fierce enemies and bosses, and uncover a mysterious story. Features multiple levels, boss battles, inventories, and rich storytelling.",
+    "desc_md": null,
+    "inst": "Place the game's .pck file in the riseofthepenguins2/gamedata.",
+    "inst_md": "Place the game's .pck file in the `riseofthepenguins2/gamedata`.",
+    "genres": [
+      "action",
+      "adventure",
+      "platformer"
+    ],
+    "image": null,
+    "rtr": false,
+    "exp": false,
+    "runtime": [
+      "godot_4.5.squashfs",
+      "weston_pkg_0.2.squashfs"
+    ],
+    "store": [
+      {
+        "name": "itch.io",
+        "gameurl": "https://billwoo.itch.io/rise-of-the-penguins-2-penguins-dark-ascent",
+        "developerurl": "https://billwoo.itch.io"
+      },
+      {
+        "name": "Steam",
+        "gameurl": "https://store.steampowered.com/app/3597710/Rise_of_the_Penguins_2_Penguins_Dark_Ascent",
+        "developerurl": "https://store.steampowered.com/curator/45549131"
+      }
+    ],
+    "availability": "paid",
+    "reqs": [],
+    "arch": [],
+    "min_glibc": ""
+  }
+}
