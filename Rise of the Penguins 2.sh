@@ -64,15 +64,15 @@ $ESUDO mount "$controlfolder/libs/${godot_runtime}.squashfs" "${godot_dir}"
 
 
 # Change to the gamedata directory so Godot can find native plugins via relative paths
-cd $GAMEDIR/riseofthepenguins2/gamedata
+cd $GAMEDIR/gamedata
 
-$GPTOKEYB "$godot_executable" -c "$GAMEDIR/riseofthepenguins2/$gptk_filename" &
+$GPTOKEYB "$godot_executable" -c "$GAMEDIR/$gptk_filename" &
 
 # Start Westonpack and Godot
 # Put CRUSTY_SHOW_CURSOR=1 after "env" if you need a mouse cursor
 # WRAPPED_LIBRARY_PATH is used instead of LD_LIBRARY_PATH to pass libraries only to the app
 # LD_PRELOAD is put here because Godot runtime links against libEGL.so, and crusty is interfering with that on some systems.
-$ESUDO env WRAPPED_LIBRARY_PATH="$GAMEDIR/riseofthepenguins2/gamedata/addons/limboai/bin:$GAMEDIR/riseofthepenguins2/lib" \
+$ESUDO env WRAPPED_LIBRARY_PATH="$GAMEDIR/gamedata/addons/limboai/bin:$GAMEDIR/lib" \
 $weston_dir/westonwrap.sh headless noop kiosk crusty_x11egl \
 LD_PRELOAD= XDG_DATA_HOME=$CONFDIR $godot_dir/$godot_executable \
 --resolution ${DISPLAY_WIDTH}x${DISPLAY_HEIGHT} -f \
